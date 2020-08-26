@@ -1,24 +1,35 @@
 import React from 'react';
 
-import { Container, SearchIcon } from './styles';
+import {
+  Container,
+  SectionResults, 
+  SectionStates,
+  FormWeather,
+  InputWeather,
+  ButtonSearch, 
+  SearchIcon 
+} from './styles';
 
 const Home: React.FC = () => {
   return(
     <Container>
       <main>
-        <section>
+
+        <SectionResults>
           <h1>Previsão do tempo</h1>
-          <form>
-            <input type="text" placeholder="Insira aqui o nome da cidade" />
-            <SearchIcon />
-          </form>
-        </section>
+          <FormWeather>
+            <InputWeather 
+              placeholder="Insira aqui o nome da cidade"
+            />
+            <ButtonSearch>
+              <SearchIcon />
+            </ButtonSearch>
+          </FormWeather>
+        </SectionResults>
 
-        <section>
+        <SectionStates>
           <h1>Capitais</h1>
-        </section>
-
-
+        </SectionStates>
       </main>
     </Container>
   );
