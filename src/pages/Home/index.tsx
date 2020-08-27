@@ -2,6 +2,7 @@ import React from 'react';
 
 import {
   Container,
+  Main,
   SectionResults, 
   SectionStates,
   FormWeather,
@@ -11,13 +12,13 @@ import {
 } from './styles';
 
 const Home: React.FC = () => {
+
   return(
     <Container>
-      <main>
-
+      <Main>
         <SectionResults>
-          <h1>Previsão do tempo</h1>
           <FormWeather>
+            <h1>Previsão do tempo</h1>
             <InputWeather 
               placeholder="Insira aqui o nome da cidade"
             />
@@ -30,7 +31,8 @@ const Home: React.FC = () => {
         <SectionStates>
           <h1>Capitais</h1>
         </SectionStates>
-      </main>
+
+      </Main>
     </Container>
   );
 };

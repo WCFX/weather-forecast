@@ -6,16 +6,17 @@ export default createGlobalStyle`
     padding: 0;
     box-sizing: border-box;
   }
-  *, html, body {
+  html, body, :root { 
     height: 100%;
     width: 100%;
-    
+    background-image: linear-gradient( to bottom, var(--orangeStrong), var(--orangeWeak));
   }
   *, button, input {
     font-family: Arial, Helvetica, sans-serif;
   }
   :root {
-    --orangeWeak: #FFBA00;
     --orangeStrong: #FF7F00; 
+    --orangeMedium: #FF9300; 
+    --orangeWeak: #FFBA00;
   }
 `;
